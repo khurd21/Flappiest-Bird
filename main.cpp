@@ -17,20 +17,20 @@
 #include <SFML/Graphics.hpp>
 
 // Classes
-#include "Templates/Classes/Bird.hpp"
-#include "Templates/Classes/Pipes.hpp"
+#include "Sprites/Bird.hpp"
+#include "Sprites/Pipes.hpp"
 
 // Scenes
-#include "Templates/LoadingScene.hpp"
-#include "Templates/GameScene.hpp"
-#include "Templates/MenuScene.hpp"
-#include "Templates/HighScoreScene.hpp"
-#include "Templates/ChangeNameScene.hpp"
-#include "Templates/CreditScene.hpp"
-#include "Templates/InvadersScene.hpp"
+#include "Scenes/LoadingScene.hpp"
+#include "Scenes/GameScene.hpp"
+#include "Scenes/MenuScene.hpp"
+#include "Scenes/HighScoreScene.hpp"
+#include "Scenes/ChangeNameScene.hpp"
+#include "Scenes/CreditScene.hpp"
+#include "Scenes/InvadersScene.hpp"
 
 // Other
-#include "Templates/Classes/helperFunctions.hpp"
+#include "Sprites/helperFunctions.hpp"
 #include <fstream>
 #include <iostream>
 #include <random>
@@ -43,7 +43,7 @@ int main() {
     currentState = LOAD;
     
     // Creating Window
-    sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "FLAPPY BIRD WSU EDITION TEST");
+    sf::RenderWindow window(sf::VideoMode(WIDTH, HEIGHT), "FLAPPIEST BIRD");
     window.setFramerateLimit(75);
     window.setKeyRepeatEnabled(false);
     
