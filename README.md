@@ -1,4 +1,4 @@
-# Flappy_Bird
+# Flappiest Bird
 
 <img
     src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"
@@ -78,6 +78,7 @@ make this project more easily runnable for more people, I introduced CMake to he
 process.
 
 - Clone the Repository
+
 - Install SFML
 
     - On the [SFML Website](https://www.sfml-dev.org/download.php), there is a page to download the necessary files.
@@ -86,6 +87,14 @@ process.
     ```shell
     brew install sfml
     ```
+
+    - NOTE: For MacOS, the homebrew version of SFML uses the Clang compiler. You will also need:
+    ```shell
+    brew install llvm
+    ```
+    If you have a compiler preference and are aware of compatibility concerns, you can change the compiler path
+    in the [CMakeLists.txt](./CMakeLists.txt) file in the root directory.
+
 - Build the Project
     - Feel free to build the project using whatever tools you feel comfortable with. However, you can use the
     CMake CLI to build the project.
